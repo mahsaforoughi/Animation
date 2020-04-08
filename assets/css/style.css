@@ -1,0 +1,35 @@
+html,
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+section:nth-child(1) {
+  background-color: red;
+}
+section:nth-child(2) {
+  background-color: blue;
+}
+section:nth-child(3) {
+  background-color: green;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+@keyframes jump {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(50px);
+        opacity: 0.1;
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+img {
+    color: #444;
+    animation: jump 2s infinite;}
